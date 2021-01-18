@@ -1,5 +1,8 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
+  buildOptions: {
+    baseUrl: "/wordcracker/",
+  },
   mount: {
     public: {url: '/', static: false},
     src: {url: '/dist'},
