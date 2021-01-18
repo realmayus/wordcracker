@@ -1,25 +1,13 @@
-# New Project
+# WordCracker
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+A simple tool for removing the password write protection of word files.
 
-## Available Scripts
+WordCracker is compatible with .doc and .docx files.
 
-### npm start
+**Important: This project was made for educational purposes only. The outputs are provided without any guarantee of validity.**
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## How it works
+When you choose a .doc file, it gets uploaded to a server running [docToDocs-server](https://github.com/realmayus/docToDocx-server), a server that wraps around LibreOffice in order to convert it to a .docx file.
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+If you choose a .docx file (which essentially is a zip archive with a fancy extension), it gets unzipped on your machine and an XML tag that looks like this gets deleted from `word/settings.xml`: `<w:documentProtection />`. The files then get rezipped again and your browser saves the zip archive as a .docx file.
 
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.js` config file.
-
-### npm test
-
-Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
