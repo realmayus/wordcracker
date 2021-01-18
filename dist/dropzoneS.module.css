@@ -1,0 +1,36 @@
+.dropzone {
+  overflow: hidden;
+  background-color: #c8c8c8;
+  border: 3px dashed #676767;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  justify-content: center;
+}
+
+.preview {
+  border: 1px solid gray;
+  background-color: #ffffff;
+  border-radius: 7px;
+  display: flex;
+  padding: 20px;
+}
+.preview > span {
+  margin-right: auto;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.inputLabel {
+  cursor: pointer;
+  width: 200px;
+  font-size: 20px;
+}
+
+.submitButtonContainer {
+  margin-top: 10px;
+}
+.submitButtonContainer > button {
+  font-family: "IBM Plex Sans", sans-serif;
+}

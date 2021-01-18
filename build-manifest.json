@@ -1,0 +1,190 @@
+{
+  "inputs": {
+    "_snowpack/env.js": {
+      "bytes": 97,
+      "imports": []
+    },
+    "_snowpack/pkg/common/_commonjsHelpers-913f9c4a.js": {
+      "bytes": 623,
+      "imports": []
+    },
+    "_snowpack/pkg/common/index-63a1b8e9.js": {
+      "bytes": 8631,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-913f9c4a.js"
+        }
+      ]
+    },
+    "_snowpack/pkg/react.js": {
+      "bytes": 263,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-913f9c4a.js"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-63a1b8e9.js"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-63a1b8e9.js"
+        }
+      ]
+    },
+    "_snowpack/pkg/react-dom.js": {
+      "bytes": 127525,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-913f9c4a.js"
+        },
+        {
+          "path": "_snowpack/pkg/common/index-63a1b8e9.js"
+        }
+      ]
+    },
+    "dist/App.module.css.proxy.js": {
+      "bytes": 1520,
+      "imports": []
+    },
+    "_snowpack/pkg/fflate.js": {
+      "bytes": 78956,
+      "imports": []
+    },
+    "_snowpack/pkg/react-dropzone-uploader/dist/styles.css": {
+      "bytes": 2564,
+      "imports": []
+    },
+    "_snowpack/pkg/react-dropzone-uploader.js": {
+      "bytes": 43057,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/_commonjsHelpers-913f9c4a.js"
+        }
+      ]
+    },
+    "dist/dropzoneS.module.css.proxy.js": {
+      "bytes": 1250,
+      "imports": []
+    },
+    "dist/DropzoneS.js": {
+      "bytes": 1296,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js"
+        },
+        {
+          "path": "_snowpack/pkg/react-dropzone-uploader/dist/styles.css"
+        },
+        {
+          "path": "_snowpack/pkg/react-dropzone-uploader.js"
+        },
+        {
+          "path": "dist/dropzoneS.module.css.proxy.js"
+        }
+      ]
+    },
+    "dist/App.js": {
+      "bytes": 3113,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/react.js"
+        },
+        {
+          "path": "dist/App.module.css.proxy.js"
+        },
+        {
+          "path": "_snowpack/pkg/fflate.js"
+        },
+        {
+          "path": "dist/DropzoneS.js"
+        }
+      ]
+    },
+    "dist/index.css": {
+      "bytes": 366,
+      "imports": []
+    },
+    "dist/index.js": {
+      "bytes": 513,
+      "imports": [
+        {
+          "path": "_snowpack/env.js"
+        },
+        {
+          "path": "_snowpack/pkg/react.js"
+        },
+        {
+          "path": "_snowpack/pkg/react-dom.js"
+        },
+        {
+          "path": "dist/App.js"
+        },
+        {
+          "path": "dist/index.css"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/env.js": {
+          "bytesInOutput": 100
+        },
+        "_snowpack/pkg/common/_commonjsHelpers-913f9c4a.js": {
+          "bytesInOutput": 332
+        },
+        "_snowpack/pkg/common/index-63a1b8e9.js": {
+          "bytesInOutput": 6933
+        },
+        "_snowpack/pkg/react.js": {
+          "bytesInOutput": 35
+        },
+        "_snowpack/pkg/react-dom.js": {
+          "bytesInOutput": 124059
+        },
+        "dist/App.module.css.proxy.js": {
+          "bytesInOutput": 1275
+        },
+        "_snowpack/pkg/fflate.js": {
+          "bytesInOutput": 11713
+        },
+        "_snowpack/pkg/react-dropzone-uploader/dist/styles.css": {
+          "bytesInOutput": 0
+        },
+        "_snowpack/pkg/react-dropzone-uploader.js": {
+          "bytesInOutput": 43105
+        },
+        "dist/dropzoneS.module.css.proxy.js": {
+          "bytesInOutput": 1026
+        },
+        "dist/DropzoneS.js": {
+          "bytesInOutput": 705
+        },
+        "dist/App.js": {
+          "bytesInOutput": 1781
+        },
+        "dist/index.css": {
+          "bytesInOutput": 0
+        },
+        "dist/index.js": {
+          "bytesInOutput": 126
+        }
+      },
+      "bytes": 191616
+    },
+    "../~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "dist/index.css": {
+          "bytesInOutput": 310
+        },
+        "_snowpack/pkg/react-dropzone-uploader/dist/styles.css": {
+          "bytesInOutput": 2094
+        }
+      },
+      "bytes": 2405
+    }
+  }
+}

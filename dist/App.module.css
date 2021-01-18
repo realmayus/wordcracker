@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.app {
+  text-align: center;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.input {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.files {
+  width: 700px;
+  min-height: 400px;
+  background-color: #cdcdcd;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.file {
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  background-color: #dedede;
+}
+.file > span:last-child {
+  float: right;
+}
+
+.dropzoneWrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 200px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
