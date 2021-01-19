@@ -32,10 +32,10 @@ const convertOnServer = (file) => {
   const formData = new FormData()
   formData.append('file', file)
 
-  return fetch('http://localhost:5001/', {
+  return fetch("https://api.realmayus.xyz/docToDocx", {
     method: 'POST',
     body: formData
-  }).then(response => response.blob(), err => alert(String(err)))
+  }).then(response => response.blob(), err => Promise.reject(err))
 
 }
 
@@ -49,7 +49,7 @@ function App() {
         // Password gets lost on encryption anyways, so we don't have to decrypt it again.
         convertOnServer(file.file).then(res => {
             downloadBlob(res, "output.docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
-        })
+        }, err => alert(String(err)))
     } else {
       fr.readAsArrayBuffer(file.file);
       fr.addEventListener('load', (e) => {
